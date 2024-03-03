@@ -1,38 +1,74 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+.ToggleDL-con h1 {
+  font-size: 4rem;
   text-align: center;
+  margin-top: 2rem;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.ToggleDL-con .outer-con {
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.ToggleDL-con .outer-con .ToggleDL-btn-con {
+  height: 6rem;
+  width: 13rem;
+  border-radius: 4rem;
+  box-shadow: inset 0rem 0rem 1rem 0rem #cdcdcd;
+  padding: 0.2rem;
+}
+.ToggleDL-con .outer-con .ToggleDL-btn-con .TDL-btn {
+  width: 6rem;
+  box-shadow: 0rem 0rem 1rem 0rem #a5a5a5;
+  height: 100%;
+  border-radius: 4rem;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ToggleDL-con .outer-con .ToggleDL-btn-con .TDL-btn img {
+  width: 5rem;
+  height: 5rem;
+}
+.ToggleDL-con .outer-con .ToggleDL-btn-con .TDL-btn img::-moz-selection {
+  background-color: transparent;
+}
+.ToggleDL-con .outer-con .ToggleDL-btn-con .TDL-btn img::selection {
+  background-color: transparent;
+}
+
+.activeblack {
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.activewhite {
+  background-color: white;
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content button, .content input {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 600;
+  border: 0;
+  box-shadow: 0rem 0rem 1rem 0rem #bbbbbb;
+  width: 8rem;
+  height: 4rem;
 }
+
+.output {
+  display: inline-block;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}/*# sourceMappingURL=App.css.map */

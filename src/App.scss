@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+
+@mixin flexBox() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+//Toggle button customization
+.ToggleDL-con {
+  h1 {
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .outer-con {
+    height: 100vh;
+    @include flexBox();
+    .ToggleDL-btn-con {
+      height: 6rem;
+      width: 13rem;
+      border-radius: 4rem;
+      box-shadow: inset 0rem 0rem 1rem 0rem #cdcdcd;
+      padding: 0.2rem;
+      .TDL-btn {
+        width: 6rem;
+        box-shadow: 0rem 0rem 1rem 0rem #a5a5a5;
+        height: 100%;
+        border-radius: 4rem;
+        float: left;
+        @include flexBox();
+        img {
+          width: 5rem;
+          height: 5rem;
+        }
+        img::selection {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}
+
+.activeblack {
+  background-color: black;
+  color: white;
+}
+.activewhite {
+  background-color: white;
+  color: black;
+}
+
+//Number count
+
+.content{
+  button, input{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    border: 0;
+    box-shadow: 0rem 0rem 1rem 0rem #bbbbbb;
+    width: 8rem;
+    height: 4rem;
+  }
+}
+
+//READTEXT
+
+.output{
+  display: inline-block;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
