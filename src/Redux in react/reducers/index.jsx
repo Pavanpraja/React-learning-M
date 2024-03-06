@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux'
 import changeTheNumber from './upDown'
-import changeTheCharacters from './upDowntxt'
+import ChangeTheCharacters from './upDowntxt'
 
 const rootReducer = combineReducers({
     changeTheNumber,
-    changeTheCharacters,
+    ChangeTheCharacters,
 })
 
 export default rootReducer;
